@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/contact' => 'contact#new'
   get '/experience' => 'statics#experience'
   get '/microapps' => 'statics#microapps'
+  get '/skills' => 'statics#skills'
 
   resources :contact, only:[ :create,:new ]
   # The priority is based upon order of creation: first created -> highest priority.

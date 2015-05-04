@@ -1,4 +1,8 @@
 
+  <% flash.each do |k,v| %>
+    <div class="text-center img-rounded alert-<%= k %>"><%= v %></div>
+  <% end %>
+
 <div align="center" id="contact">
     <ul class="list-group">
         <%= form_for(:contact, url:{action: "create"},class: 'form-control' ) do |f|%>
