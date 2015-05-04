@@ -62,7 +62,10 @@ nav{
   position: fixed;
   text-align: center;
 }
-
+.alert-danger, .alert-success{
+  padding: 5px 10px 5px 10px;
+  margin: 10px 10px 10px 10px;
+}
 .img-center{
   margin: 0 auto;
 }
