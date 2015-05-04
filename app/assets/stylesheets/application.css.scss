@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$red: #B50105;
+
+body{
+  padding-top: 80px;
+  font-size: 18px;
+}
+nav{
+  /*border-bottom: 1px solid $red;*/
+
+}
+.container{
+  /*border-left:1px solid $red;
+  border-right:1px solid $red;
+  border-bottom:1px solid $red;
+  border-radius: 5px;*/
+}
+ul{
+  margin-left: 0;
+}
+#contact ul{
+  list-style: none;
+}
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  display: inline;
+  font-size: 26px;
+  padding: 40px 10px 5px 10px;
+ }
+nav ul a{
+  color: $red;
+}
+nav ul a:hover{
+  text-decoration: none;
+  color: $red;
+}
+
+nav{
+  margin: 0 auto;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  text-align: center;
+}
+
+.img-center{
+  margin: 0 auto;
+}
+.form-control{
+  margin-bottom: 12px;
+}
+.selected{
+  border-bottom: 2px solid $red;
+}
