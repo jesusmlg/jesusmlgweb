@@ -13,10 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap-sprockets
+
 //= require_tree .
 
-$(document).on('ready page:load',function(){
+$(document).on('ready page:change',function(){
   menuAnim();
   markActive();
   textCounter();
@@ -26,8 +26,13 @@ function menuAnim(){
   $('nav ul li a').mouseenter(function(){
     if($(this).parent().attr('class')!="selected")
     {
-      $(this).parent().css({border: '0 solid #B50105'}).animate({
-          borderBottomWidth: 2
+      // $(this).parent().css({border: '0 solid #000'}).animate({
+      //     borderLeftWidth: 2,
+      //     borderRightWidth: 2
+      // }, 100);
+  $(this).parent().css({border: '0 solid #FFF'}).animate({
+          borderLeftWidth: 1,
+          borderRightWidth: 1
       }, 100);
     }
   }).mouseout(function(){
