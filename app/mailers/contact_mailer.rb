@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from:  ENV['JESUSMLGWEB_EMAIL']
+  default from:  ENV['JESUSMLGWEB_EMAIL_DEST']
 
   def contact_mailer(msg,name)
     @msg = msg
