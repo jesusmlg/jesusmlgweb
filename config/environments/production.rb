@@ -38,6 +38,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
+  #Email config
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: ENV['JESUSMLGWEB_HOST'] }
   config.action_mailer.smtp_settings = {
