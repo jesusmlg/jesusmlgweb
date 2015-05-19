@@ -42,9 +42,12 @@ nav ul,table ul{
   list-style: none;
 }
 
-nav ul li{
-
- }
+#bio ul li{
+  margin-left: 25px;
+}
+#microapps ul li{
+  margin-left: 25px;
+}
 .navbar-nav a{
   color: $red;
 }
