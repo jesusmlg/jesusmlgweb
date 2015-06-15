@@ -60,7 +60,7 @@ function markActive()
 function textCounter(){
   $('#text').keyup(function(){
 
-    var txt = $(this).val();
+    var txt = $(this).val().replace(/ +(?= )/g,'');;
     var characters = txt.length;
 
     var words_array = txt.trim().split(" ");
